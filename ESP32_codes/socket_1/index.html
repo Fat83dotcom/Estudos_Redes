@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esp32 Skills</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: lightgray;
+            background-color: black;
+            margin: 0 auto;
+            padding: 0;
+        }
+        .center {
+            text-align: center;
+        }
+        .btn-liga {
+            color: green;
+        }
+        .btn-desliga {
+            color: red;
+        }
+        .btn-liga a {
+            color: green;
+            
+        }
+        .btn-desliga a {
+            color: red;
+        }
+        .btn {
+            padding: 10px;
+            margin: 10px;
+            width: 25%;
+            font-size: large;
+        }
+        .btn-container {
+            display: flex;
+            flex-direction: column;  
+        }
+    </style>
+</head>
+<body class="center">
+    <div>
+        <h1>Controle Da Casa</h1>
+        <h3>Luz do Quarto</h3>
+        <div class="btn-container">
+            <form action="/H" method="get">
+                <button class="btn btn-liga" type="submit">Liga</button>
+            </form>
+            <form action="/L" method="get">
+                <button class="btn btn-desliga" type="submit">Desliga</button>
+            </form>
+        </div> 
+    </div>
+</body>
+</html>
